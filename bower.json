@@ -1,0 +1,38 @@
+{
+  "name": "analyticsintegration",
+  "main": [
+    "/dist/analyticsintegration.min.js",
+    "/dist/analyticsintegration.min.css"
+  ],
+  "version": "0.1.0",
+  "description": "TODO",
+  "authors": [
+    "TODO"
+  ],
+  "ignore": [
+    "**/.*",
+    "package.json",
+    "klei.json",
+    "gulpfile.js",
+    "node_modules",
+    "bower_components",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "angular-route": "~1.2.14",
+    "bootstrap": "^3.3.6"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.14"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js",
+        "dist/fonts/*.*"
+      ]
+    }
+  }
+}

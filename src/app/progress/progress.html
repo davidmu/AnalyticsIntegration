@@ -1,0 +1,55 @@
+
+<div class="col-md-8 col-md-offset-2">
+	<div class="key-numbers col-md-12">
+		<h3>Web Sales Status report Stockholm</h3>
+		<label>Current year:</label>
+		{{numberWithCommas(currentYear)}}
+		<label>Max week:</label>
+		{{numberWithCommas(maxWeek)}}
+		<label>Current week:</label>
+		{{numberWithCommas(currentWeek)}}
+		<label>Max day:</label>
+		{{numberWithCommas(maxDay)}}
+		<label>Yesterday:</label>
+		{{numberWithCommas(yesterday)}}
+		<label>Today:</label>
+		{{numberWithCommas(currentDay)}}
+		<button class="btn btn-default Authorize-button" ng-click="click()">Authorize</button>
+	</div>
+	<div class="col-md-12" style="margin-top: 30px;">
+		<div class="col-md-2">0</div>
+		<div class="col-md-8 text-center"><label>Tracking towards weekly record</label></div>
+		<div class="col-md-2 right">100%</div>
+	</div>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="{{currentWeek}}"
+	  aria-valuemin="0" aria-valuemax="{{maxWeek}}" style="width:{{width}}%">
+	    {{width}}%
+	  </div>
+	</div>
+	<div class="col-md-12" style="margin-top: 30px;">
+		<div class="col-md-2">0</div>
+		<div class="col-md-8 text-center"><label>Tracking towards Daily record</label></div>
+		<div class="col-md-2 right">100%</div>
+	</div>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="{{currentDay}}"
+	  aria-valuemin="0" aria-valuemax="{{maxDay}}" style="width:{{width1}}%">
+	    {{width1}}%
+	  </div>
+	</div>
+	<div class="col-md-12" style="margin-top: 30px;">
+		<div class="col-md-2">0</div>
+		<div class="col-md-8 text-center"><label>Tracking towards season goal</label></div>
+		<div class="col-md-2 right">100%</div>
+	</div>
+	<div class="progress">
+	  <div class="progress-bar" role="progressbar" aria-valuenow="{{currentYear}}"
+	  aria-valuemin="0" aria-valuemax="2500000" style="width:{{width2}}%">
+	    {{width2}}%
+	  </div>
+	</div>
+
+</div>
+
+

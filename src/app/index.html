@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="analyticsintegration">
+  <head>
+    <meta charset="utf-8"/>
+    <title>analyticsintegration</title>
+    <!-- inject:vendor:css -->
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/progress/progress.css">
+    <!-- endinject -->
+  </head>
+  <body>
+    <ng-view></ng-view>
+    <!-- inject:vendor:js -->
+    <script src="/angular/angular.js"></script>
+    <script src="/angular-route/angular-route.js"></script>
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endinject -->
+    <script src="https://apis.google.com/js/client.js?onload=authorize"></script>
+    <!-- inject:js -->
+    <script src="/todo/todo.js"></script>
+    <script src="/todo/todo-controller.js"></script>
+    <script src="/todo/progress.js"></script>
+    <script src="/todo/progress-controller.js"></script>
+    <script src="/progress/progress.js"></script>
+    <script src="/progress/progress-controller.js"></script>
+    <script src="/app.js"></script>
+    <script src="/analyticsintegration-templates.js"></script>
+    <!-- endinject -->
+  </body>
+</html>
